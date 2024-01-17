@@ -19,6 +19,12 @@ EditorBuildSettings:
     guid: 23bf275cd9834ba46948fe93f3709e29
   - enabled: 1
     path: Assets/BoltKit_Isometric/Scenes/Level01.unity
-    guid: ae16472a58ddc9c44b11edb10973af7d
+    guid: 3a74137b7ec8b4bf09e54d21f4d7b6a0
+  - enabled: 1
+    path: Assets/BoltKit_Isometric/Scenes/Level02.unity
+    guid: 9eeece6e3722d4022a1c371f87b9d7e9
+  - enabled: 1
+    path: Assets/BoltKit_Isometric/Scenes/Level03.unity
+    guid: c23cb32eb5c774fb79ba6933b19d2abe
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
