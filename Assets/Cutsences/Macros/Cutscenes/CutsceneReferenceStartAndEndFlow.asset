@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: CutsceneReferenceStartAndEndFlow
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[{"key":"Start
+      flow","label":"Loading","summary":null,"hideLabel":false},{"key":"Cutscene
+      loaded","label":"","summary":null,"hideLabel":false},{"key":"End flow","label":"Ending","summary":null,"hideLabel":false}],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":"Cutscene
+      start and end flow","summary":"Outputs from CutsceneReference event triggers
+      (used in CutsceneReferenceSimplePlayer)","pan":{"x":-350.775,"y":17.765},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-9.0,"y":-42.0},"guid":"3fe334bf-55d4-4a60-b17d-94f9aa5ba957","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"12"},{"argumentCount":0,"coroutine":false,"defaultValues":{"target":null,"name":{"$content":"endCutscene","$type":"System.String"}},"position":{"x":-386.0,"y":132.0},"guid":"33b46922-1a88-4221-90da-156a88a3761b","$version":"A","$type":"Unity.VisualScripting.CustomEvent","$id":"14"},{"argumentCount":0,"coroutine":false,"defaultValues":{"target":null,"name":{"$content":"cutsceneLoaded","$type":"System.String"}},"position":{"x":-429.0,"y":-34.0},"guid":"69396510-7eca-4e8d-805d-48018e1ed3a9","$version":"A","$type":"Unity.VisualScripting.CustomEvent","$id":"16"},{"argumentCount":0,"coroutine":false,"defaultValues":{"target":null,"name":{"$content":"loadCutscene","$type":"System.String"}},"position":{"x":-384.0,"y":-208.0},"guid":"ec9ae245-5f63-41f4-9f1b-80804297a692","$version":"A","$type":"Unity.VisualScripting.CustomEvent","$id":"18"},{"sourceUnit":{"$ref":"14"},"sourceKey":"trigger","destinationUnit":{"$ref":"12"},"destinationKey":"End
+      flow","guid":"78423fb9-bb65-4900-96ae-4c0e5478f931","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"16"},"sourceKey":"trigger","destinationUnit":{"$ref":"12"},"destinationKey":"Cutscene
+      loaded","guid":"7f443b06-da41-4d27-99db-7cbdaad5a7ca","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"18"},"sourceKey":"trigger","destinationUnit":{"$ref":"12"},"destinationKey":"Start
+      flow","guid":"c51cf780-83b8-4199-97bd-9027f449c3e6","$type":"Unity.VisualScripting.ControlConnection"}],"$version":"A"}}'
+    _objectReferences: []

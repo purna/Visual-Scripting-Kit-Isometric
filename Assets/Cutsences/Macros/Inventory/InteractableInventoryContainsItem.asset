@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: InteractableInventoryContainsItem
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"Enter","label":null,"summary":null,"hideLabel":true}],"controlOutputDefinitions":[{"key":"Yes","label":null,"summary":null,"hideLabel":false},{"key":"No","label":null,"summary":null,"hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":null,"_type":"InventoryItemSO","key":"Item","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":"Inventory
+      contains item?","summary":"Does the inventory contain a particular item?","pan":{"x":225.8508,"y":1.009441},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":-211.0,"y":-2.0},"guid":"5ae33bef-b6b9-4115-8533-08b606045848","$version":"A","$type":"Bolt.GraphInput","$id":"13"},{"defaultValues":{},"position":{"x":362.0,"y":-20.0},"guid":"f7d949f5-1cd0-4318-a6a4-f13326fdd718","$version":"A","$type":"Bolt.GraphOutput","$id":"15"},{"defaultValues":{},"position":{"x":204.0,"y":-21.0},"guid":"27bd7269-e289-494d-838f-1af87f699810","$version":"A","$type":"Bolt.Branch","$id":"17"},{"member":{"name":"inventory","parameterTypes":null,"targetType":"BoltInteractable","targetTypeName":"BoltInteractable","$version":"A"},"defaultValues":{"target":null},"position":{"x":-220.0,"y":-114.0},"guid":"f76d9ca5-301b-4ced-aa16-59772c79855a","$version":"A","$type":"Bolt.GetMember","$id":"19"},{"chainable":false,"member":{"name":"InventoryContainsItem","parameterTypes":["InventoryItemSO"],"targetType":"Inventory","targetTypeName":"Inventory","$version":"A"},"defaultValues":{"target":null,"%item":null},"position":{"x":-35.0,"y":-24.0},"guid":"6e8ffe1e-29b1-475c-b10e-ddc2dcc13cf2","$version":"A","$type":"Bolt.InvokeMember","$id":"22"},{"sourceUnit":{"$ref":"17"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"15"},"destinationKey":"Yes","guid":"d4ac03ca-87d4-45a1-81a3-c527e9f0b1d2","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"ifFalse","destinationUnit":{"$ref":"15"},"destinationKey":"No","guid":"0fc54714-d777-41e4-ba32-3e872e5ba42f","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"Enter","destinationUnit":{"$ref":"22"},"destinationKey":"enter","guid":"26f60834-e32e-443d-99a2-180e3967a9a4","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"exit","destinationUnit":{"$ref":"17"},"destinationKey":"enter","guid":"39d002be-da81-4fd6-860b-b792791c827e","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"value","destinationUnit":{"$ref":"22"},"destinationKey":"target","guid":"1ae6fe45-6fe3-4b02-bb55-fee10cbdd6b2","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"13"},"sourceKey":"Item","destinationUnit":{"$ref":"22"},"destinationKey":"%item","guid":"06af66d9-73f1-4d14-951b-2c52d9d3d80e","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"result","destinationUnit":{"$ref":"17"},"destinationKey":"condition","guid":"56b82aa8-ba37-468c-87d8-cda45041117d","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []

@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: CutsceneReferenceSimplePlayer
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[{"key":"Background
+      actions","label":null,"summary":"Background actions and changes in the chapter
+      while cutscene is playing","hideLabel":false},{"key":"Ending events","label":null,"summary":"Events
+      which happen after the cutscene has finished","hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":{"r":0.0,"g":0.0,"b":0.0,"a":1.0,"$type":"UnityEngine.Color"},"_type":"UnityEngine.Color","key":"Fade
+      color","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":"Simple
+      Cutscene Player","summary":"Normal macro for running a cutscene. Fades current
+      Location out to given colour, plays cutscene then returns, with options for
+      background and finishing actions in the chapter","pan":{"x":230.3893,"y":109.2382},"zoom":1.0,"elements":[{"nest":{"source":"Macro","macro":0,"embed":null},"defaultValues":{},"position":{"x":-388.0,"y":-48.0},"guid":"5000916c-a170-4bd5-b0ec-7970d566c4c4","$version":"A","$type":"Unity.VisualScripting.SubgraphUnit","$id":"12"},{"outputCount":2,"defaultValues":{},"position":{"x":602.0,"y":10.0},"guid":"2c07d34a-d63c-43b0-a723-a36baae5c90d","$version":"A","$type":"Unity.VisualScripting.Sequence","$id":"15"},{"chainable":false,"parameterNames":[],"member":{"name":"EndCutscene","parameterTypes":[],"targetType":"CutsceneReference","targetTypeName":"CutsceneReference","$version":"A"},"defaultValues":{},"position":{"x":232.0,"y":123.0},"guid":"f52a2e36-9837-41c6-a214-04a865a85d30","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"17"},{"defaultValues":{},"position":{"x":919.0,"y":-48.0},"guid":"010f02fb-d61f-4a48-8a23-9721de7a99ba","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"21"},{"chainable":false,"parameterNames":[],"member":{"name":"LoadCutscene","parameterTypes":[],"targetType":"CutsceneReference","targetTypeName":"CutsceneReference","$version":"A"},"defaultValues":{},"position":{"x":237.0,"y":-196.0},"guid":"143316f6-f4a2-4a52-b4a6-3edb311447c0","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"23"},{"sourceUnit":{"$ref":"15"},"sourceKey":"0","destinationUnit":{"$ref":"21"},"destinationKey":"Ending
+      events","guid":"b057d043-d991-4ca7-94c8-09baf8c41b39","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"17"},"sourceKey":"exit","destinationUnit":{"$ref":"15"},"destinationKey":"enter","guid":"4a875086-c6bd-4115-bd07-c74a21d2ea96","$type":"Unity.VisualScripting.InvalidConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"exit","destinationUnit":{"$ref":"21"},"destinationKey":"Background
+      actions","guid":"480f48fb-2d35-4e4a-b644-2db86e164597","$type":"Unity.VisualScripting.InvalidConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"Start
+      flow","destinationUnit":{"$ref":"23"},"destinationKey":"enter","guid":"22896e4d-f72b-4d68-88e2-32c712c45293","$type":"Unity.VisualScripting.InvalidConnection"}],"$version":"A"}}'
+    _objectReferences:
+    - {fileID: 11400000, guid: 64197dddb0f28394c8d015ce44f22c2a, type: 2}

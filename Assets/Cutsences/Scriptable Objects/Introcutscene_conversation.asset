@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adbf4d43284aec54181a2511d8f4913a, type: 3}
+  m_Name: Introcutscene_conversation
+  m_EditorClassIdentifier: 
+  charactersList:
+  - '<color=#B82F2C>Bob</color>: '
+  - '<color=#397551>Dobby</color>: '
+  dialogueList:
+  - charactersListIndex: 1
+    dialogue: Can I deliver some presents this year?
+  - charactersListIndex: 0
+    dialogue: Alright, you can deliver <b><color=#B82F2C>one</color></b> present
+  - charactersListIndex: 1
+    dialogue: Hooray!
+  - charactersListIndex: 0
+    dialogue: Take a present, go down the chimney and leave it under the tree.
+  - charactersListIndex: 1
+    dialogue: Present. Chimney. Tree. Got it!
+  - charactersListIndex: 0
+    dialogue: Then climb back up and set off a firework. I'll come pick you up.
+  - charactersListIndex: 1
+    dialogue: Set off the firework. Check!
+  - charactersListIndex: 0
+    dialogue: I've got 2 billion other presents to deliver, so don't mess this one
+      up.
+  - charactersListIndex: 1
+    dialogue: This is gonna be brilliant!

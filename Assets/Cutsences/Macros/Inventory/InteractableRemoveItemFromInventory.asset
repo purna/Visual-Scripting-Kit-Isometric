@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: InteractableRemoveItemFromInventory
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"Enter","label":null,"summary":null,"hideLabel":true}],"controlOutputDefinitions":[{"key":"Exit","label":null,"summary":null,"hideLabel":false}],"valueInputDefinitions":[{"hasDefaultValue":true,"defaultValue":null,"_type":"InventoryItemSO","key":"Item","label":null,"summary":"Item
+      to remove","hideLabel":false}],"valueOutputDefinitions":[],"title":"Remove
+      item from inventory","summary":"Removes an item from the inventory","pan":{"x":-142.0405,"y":27.5849},"zoom":0.9544974,"elements":[{"defaultValues":{},"position":{"x":-656.0,"y":-63.0},"guid":"73743d97-bfa2-43d1-a5b3-9690a0ca4c0a","$version":"A","$type":"Bolt.GraphInput","$id":"12"},{"defaultValues":{},"position":{"x":68.0,"y":-63.0},"guid":"0e54ab27-fcab-40ea-a3f7-27506502bccd","$version":"A","$type":"Bolt.GraphOutput","$id":"14"},{"chainable":false,"member":{"name":"ChangeCursor","parameterTypes":["CursorController+CursorName"],"targetType":"CursorController","targetTypeName":"CursorController","$version":"A"},"defaultValues":{"target":null,"%c":{"$content":"main","$type":"CursorController+CursorName"}},"position":{"x":-146.0,"y":-64.0},"guid":"ee784d90-f103-4f57-b9c5-8a4e44359305","$version":"A","$type":"Bolt.InvokeMember","$id":"16"},{"chainable":false,"member":{"name":"RemoveFromInventory","parameterTypes":[],"targetType":"InventoryItemSO","targetTypeName":"InventoryItemSO","$version":"A"},"defaultValues":{"target":null},"position":{"x":-446.0,"y":-64.0},"guid":"32326067-ebce-4d82-97f8-d655e4626ce9","$version":"A","$type":"Bolt.InvokeMember","$id":"19"},{"chainable":false,"member":{"name":"FindObjectOfType","parameterTypes":["System.Type"],"targetType":"UnityEngine.GameObject","targetTypeName":"UnityEngine.GameObject","$version":"A"},"defaultValues":{"%type":{"$content":"GameController","$type":"System.RuntimeType"}},"position":{"x":-668.0,"y":64.0},"guid":"e410fae8-f51e-4f40-842c-0c7e87c17501","$version":"A","$type":"Bolt.InvokeMember","$id":"22"},{"member":{"name":"cursors","parameterTypes":null,"targetType":"GameController","targetTypeName":"GameController","$version":"A"},"defaultValues":{"target":null},"position":{"x":-337.0,"y":74.0},"guid":"34981254-3e69-47f4-b88c-d9361f35db04","$version":"A","$type":"Bolt.GetMember","$id":"25"},{"sourceUnit":{"$ref":"16"},"sourceKey":"exit","destinationUnit":{"$ref":"14"},"destinationKey":"Exit","guid":"4c7f807b-ab29-403d-8d24-a9954dac41ce","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"Enter","destinationUnit":{"$ref":"19"},"destinationKey":"enter","guid":"1638db06-4ab6-4b9c-8f8d-95f6230f28fc","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"exit","destinationUnit":{"$ref":"16"},"destinationKey":"enter","guid":"ad1cc3a1-a0ab-4edc-84ed-cafabcf29826","$type":"Bolt.ControlConnection"},{"sourceUnit":{"$ref":"12"},"sourceKey":"Item","destinationUnit":{"$ref":"19"},"destinationKey":"target","guid":"a83e1c78-d1cd-4ba9-b614-6c7a326d201b","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"22"},"sourceKey":"result","destinationUnit":{"$ref":"25"},"destinationKey":"target","guid":"58dbef4d-cda6-43fb-a437-a3c9970e9f72","$type":"Bolt.ValueConnection"},{"sourceUnit":{"$ref":"25"},"sourceKey":"value","destinationUnit":{"$ref":"16"},"destinationKey":"target","guid":"85d03547-42b4-4636-b795-e888d0cecb9f","$type":"Bolt.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
