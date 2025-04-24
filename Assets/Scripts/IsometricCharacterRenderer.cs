@@ -18,6 +18,12 @@ public class IsometricCharacterRenderer : MonoBehaviour
         animator = GetComponent<Animator>();
     }
 
+    private void LateUpdate()
+    {
+        // Ensure the GameObject's scale is always consistent
+        transform.localScale = Vector3.one;
+    }
+
 
     public void SetDirection(Vector2 direction){
 
