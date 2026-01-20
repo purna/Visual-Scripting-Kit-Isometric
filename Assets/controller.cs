@@ -170,7 +170,7 @@ public class IsometricPlayerController : MonoBehaviour
             if (bulletRb != null)
             {
                 Vector2 directionWithSpread = Quaternion.Euler(0, 0, angleOffset) * facingDirection;
-                bulletRb.velocity = directionWithSpread * bulletSpeed;
+                bulletRb.linearVelocity = directionWithSpread * bulletSpeed;
             }
         }
     }
